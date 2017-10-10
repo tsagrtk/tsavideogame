@@ -5,6 +5,7 @@ void setup(){
   noLoop();
   PFont fontA = loadFont("courier");
   textFont(fontA, 14);  
+  alert("hello");
 }
 
 void draw(){  
