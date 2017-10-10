@@ -9,5 +9,5 @@ void setup(){
 
 void draw(){  
   text("Hello Web!",20,20);
-  println("Hello ErrorLog!");
+  println(size());
 }
