@@ -8,5 +8,5 @@ void setup(){
 
 void draw(){  
   text("Hello Web!",20,20);
-  size(window.innerWidth,window.innerHeight*0.8);
+  size(window.innerWidth,window.innerHeight);
 }
