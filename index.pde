@@ -1,14 +1,12 @@
 void setup(){
-  size(200,200);
   background(125);
   fill(255);
   noLoop();
   PFont fontA = loadFont("courier");
   textFont(fontA, 14);  
-  alert("hello");
 }
 
 void draw(){  
   text("Hello Web!",20,20);
-  println(window.innerWidth+" "+window.innerHeight);
+  size(window.innerWidth,window.innerHeight*0.8);
 }
