@@ -1,6 +1,7 @@
 *{
-  font-family:arial;
+  font-family: arial;
 }
 body{
-  margin:0px; 
+  margin: 0px; 
+  overflow: hidden;
 }
