@@ -1,5 +1,5 @@
 void setup(){
-  background(125);
+  background(#00BFFF);
   fill(255);
   noLoop();
   PFont fontA = loadFont("courier");
