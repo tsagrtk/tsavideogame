@@ -1,5 +1,6 @@
 void setup(){
-  background(0,191,255);
+  color sky = color(0,191,255); 
+  background(sky);
   fill(255);
   noLoop();
   PFont fontA = loadFont("courier");
@@ -7,6 +8,7 @@ void setup(){
 }
 
 void draw(){  
+  fill(0,255,0);
   text("Hello Web!",20,20);
   size(window.innerWidth,window.innerHeight);
   ellipse(56, 46, 55, 55);
