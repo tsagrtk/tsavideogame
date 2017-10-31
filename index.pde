@@ -1,5 +1,5 @@
 void setup(){
-  color sky = color(0,100,000); 
+  color sky = color(0,255,255); 
   background(sky);
   fill(255);
 }
