@@ -10,5 +10,6 @@ void draw(){
   textFont(fontA, 14);
   fill(0,0,0);
   text("Hello Web!",20,20);
-  size(window.innerWidth,window.innerHeight);  
+  size(window.innerWidth,window.innerHeight);
+  elipes(58, 46, 55,);
 }
