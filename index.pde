@@ -11,6 +11,6 @@ void draw(){
   fill(0,0,0);
   text("Hello Web!",20,20);
   size(window.innerWidth,window.innerHeight);
-  fill(0,0,0)
+  fill(0,345,245)
   ellipse(58, 46, 55, 55);
 }
