@@ -3,11 +3,11 @@ void setup(){
   color sky = color(255,255,255); 
   background(sky);
   fill(255);
-  int height = window.innerHeight;
-  int width = window.innerWidth
-  int playerx = 0;
-  int playery = 0;
-  int speed = 5;
+  var height = window.innerHeight;
+  var width = window.innerWidth
+  var playerx = 0;
+  var playery = 0;
+  var speed = 5;
   
 }
 
