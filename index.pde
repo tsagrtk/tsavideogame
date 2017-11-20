@@ -1,5 +1,5 @@
 void setup(){
-  /*
+  
   color sky = color(255,255,255); 
   background(sky);
   fill(255);
@@ -8,7 +8,7 @@ void setup(){
   int playerx = 0;
   int playery = 0;
   int speed = 5;
-  */
+  
 }
 
 void draw(){  
