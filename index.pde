@@ -8,7 +8,7 @@ void setup(){
   int playery = 0;
   int speed = 5;
 }
-
+/*
 void draw(){  
   PFont fontA = loadFont("courier");
   size(10,10)
@@ -30,3 +30,4 @@ void draw(){
     }
   }
 }
+*/
