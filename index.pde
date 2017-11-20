@@ -8,7 +8,7 @@ void setup(){
   int playery = 0;
   int speed = 5;
 }
-/*
+
 void draw(){  
   PFont fontA = loadFont("courier");
   size(10,10)
@@ -17,6 +17,7 @@ void draw(){
   text("Hello Web!",20,20);
   size(window.innerWidth,window.innerHeight);
   fill(255,215,0)
+  /*
   ellipse(playerx, playery, 55, 55);
   if(keyPressed) {
     if(keyCode==UP || key=='w'){
@@ -29,5 +30,6 @@ void draw(){
       playery+=speed;
     }
   }
+  */
 }
-*/
+
