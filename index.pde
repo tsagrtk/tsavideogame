@@ -11,7 +11,6 @@ void setup(){
 }
 
 void draw(){  
-/*
   PFont fontA = loadFont("courier");
   size(10,10)
   textFont(fontA, 14);
@@ -30,6 +29,5 @@ void draw(){
     } else if(keyCode==RIGHT || key=='w'){
       playery+=speed;
     }
-  }*/
 }
 
