@@ -3,7 +3,7 @@ float playery = 0;
 int speed = 5;
 */
 void setup(){
-  fullScreen();
+  size(screen.width, screen.height);
   color sky = color(255,255,255); 
   background(sky);
   fill(255);
