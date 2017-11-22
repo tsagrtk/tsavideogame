@@ -1,6 +1,6 @@
 float playerx = 0;
 float playery = 0;
-int speed = 5;
+float speed = 5;
 
 void setup(){
   size(screen.width, screen.height);
@@ -17,14 +17,13 @@ void draw(){
   text("Hello Web!",20,20);
   fill(255,215,0)
   ellipse(playerx, playery, 55, 55);
-  if(keyPressed == true) {
+  if(keyPressed) {
     if(keyCode==UP || key=='w'){
-      playery+=speed;
+      //playery += speed;
     } else if(keyCode==DOWN || key=='w'){
-      playery-=speed;
+      //playery-=speed;
     } else if(keyCode==LEFT || key=='w'){
-      playerx-=speed;
+      //playerx-=speed;
     } else if(keyCode==RIGHT || key=='w'){
-      playery+=speed;
+      //playery+=speed;
     }
-}
