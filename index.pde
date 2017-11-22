@@ -1,13 +1,13 @@
+int height = window.innerHeight;
+int width = window.innerWidth;
+float playerx = 0;
+float playery = 0;
+int speed = 5;
+
 void setup(){
   color sky = color(255,255,255); 
   background(sky);
   fill(255);
-  int height = window.innerHeight;
-  int width = window.innerWidth;
-  float playerx = 0;
-  float playery = 0;
-  int speed = 5;
-  
 }
 
 void draw(){  
