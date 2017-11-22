@@ -1,7 +1,7 @@
-/*float playerx = 0;
+float playerx = 0;
 float playery = 0;
 int speed = 5;
-*/
+
 void setup(){
   size(screen.width, screen.height);
   color sky = color(255,255,255); 
