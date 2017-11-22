@@ -20,12 +20,16 @@ void draw(){
   if(keyPressed) {
     if(keyCode==UP || key=='w'){
       //playery += speed;
+      console.log("up");
     } else if(keyCode==DOWN || key=='w'){
       //playery-=speed;
+      console.log("down");
     } else if(keyCode==LEFT || key=='w'){
       //playerx-=speed;
+      console.log("left");
     } else if(keyCode==RIGHT || key=='w'){
       //playery+=speed;
+      console.log("right");
     }
   }
 }
