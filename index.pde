@@ -17,7 +17,7 @@ void draw(){
   text("Hello Web!",20,20);
   fill(255,215,0)
   ellipse(playerx, playery, 55, 55);
-  if(keyPressed) {
+  if(keyPressed == true) {
     if(keyCode==UP || key=='w'){
       playery+=speed;
     } else if(keyCode==DOWN || key=='w'){
