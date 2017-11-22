@@ -2,16 +2,16 @@ void setup(){
   color sky = color(255,255,255); 
   background(sky);
   fill(255);
-  var height = window.innerHeight;
-  var width = window.innerWidth;
-  var playerx = 0;
-  var playery = 0;
-  var speed = 5;
+  int height = window.innerHeight;
+  int width = window.innerWidth;
+  float playerx = 0;
+  float playery = 0;
+  int speed = 5;
   
 }
 
 void draw(){  
-  var fontA = loadFont("courier");
+  PFont fontA = loadFont("courier");
   size(10,10)
   textFont(fontA, 14);
   fill(0,0,0);
