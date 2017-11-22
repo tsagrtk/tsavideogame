@@ -27,3 +27,5 @@ void draw(){
     } else if(keyCode==RIGHT || key=='w'){
       //playery+=speed;
     }
+  }
+}
