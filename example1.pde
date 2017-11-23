@@ -12,6 +12,9 @@ void draw(){
   smooth(); 
   background(0);
   ellipse(ballx,bally,20,20);   
+  if(keyPressed){
+     keyPressed();
+  }
 }
  
 public void keyPressed(){
