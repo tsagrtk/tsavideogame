@@ -23,12 +23,12 @@ void draw(){
 }
 void keyPressed(){
   if(keyCode==UP || key=='w'){
-    playery += speed;
+    playery = playery + speed;
   } else if(keyCode==DOWN || key=='w'){
-    playery-=speed;
+    playery = playery - speed;
   } else if(keyCode==LEFT || key=='w'){
-    playerx-=speed;
+    playerx = playerx - speed;
   } else if(keyCode==RIGHT || key=='w'){
-    playery+=speed;
+    playerx = playerx + speed;
   }
 }
