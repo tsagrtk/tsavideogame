@@ -36,7 +36,7 @@ public void keyReleased(){
 }
  
 public void ballUp(){
-    bally = bally+speed;
+    bally = bally-speed;
 }
  
 public void ballRight(){
@@ -47,5 +47,5 @@ public void ballLeft(){
     ballx = ballx-speed;   
 }
 public void ballDown(){  
-    bally = bally-speed;   
+    bally = bally+speed;   
 }
