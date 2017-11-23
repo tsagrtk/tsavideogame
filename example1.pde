@@ -15,19 +15,18 @@ void draw(){
 }
  
 public void keyPressed(){
-   
     println("Key code pressed: " + keyCode);
      
     if (key == 'w'){
       ballUp();
     }
-    else if (key == 'd'){
+    else if (key == 's'){
         ballDown();
     }
     else if (key == 'a'){
         ballLeft();
     }
-    else if (key == 's'){
+    else if (key == 'd'){
         ballRight();
     }
          
@@ -37,17 +36,24 @@ public void keyReleased(){
 }
  
 void ballUp(){
-    bally = bally-speed;
+  if ( bally >=0 && bally <= width ){
+    bally = bally+speed;
+  }
 }
  
 void ballRight(){
+  if ( ballx >=0 && ballx <= width ){
     ballx = ballx+speed;    
+  }
 }
  
 void ballLeft(){
+  if ( ballx >=0 && ballx <= width ){
     ballx = ballx-speed;   
   }
 }
 void ballDown(){  
-    bally = bally+speed;   
+  if ( bally >=0 && bally <= height ){
+    bally = bally-speed;   
+  }
 }
