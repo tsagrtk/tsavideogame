@@ -35,25 +35,17 @@ public void keyReleased(){
     println("Just to let you know a key has been released");
 }
  
-void ballUp(){
-  if ( bally >=0 && bally <= width ){
+public void ballUp(){
     bally = bally+speed;
-  }
 }
  
-void ballRight(){
-  if ( ballx >=0 && ballx <= width ){
+public void ballRight(){
     ballx = ballx+speed;    
-  }
 }
  
-void ballLeft(){
-  if ( ballx >=0 && ballx <= width ){
+public void ballLeft(){
     ballx = ballx-speed;   
-  }
 }
-void ballDown(){  
-  if ( bally >=0 && bally <= height ){
+public void ballDown(){  
     bally = bally-speed;   
-  }
 }
