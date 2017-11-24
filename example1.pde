@@ -4,7 +4,7 @@ int bally=0;
 int speed=10;
  
 public void setup(){
-    size(600, 600);
+    size(window.innerWidth, window.innerHeight);
     background(0);
 }
  
