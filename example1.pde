@@ -1,6 +1,6 @@
 // Simple sketch to show key pressed
-int ballx=0;
-int bally=0;
+int ballx=window.innerWidth/2;
+int bally=window.innerHeight/2;
 int speed=10;
  
 public void setup(){
@@ -11,7 +11,7 @@ public void setup(){
 void draw(){
   smooth(); 
   background(0);
-  ellipse(ballx,bally,20,20);   
+  rect(ballx,bally,20,20);   
   if(keyPressed){
      keyPressed();
   }
