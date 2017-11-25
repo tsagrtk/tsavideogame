@@ -13,11 +13,6 @@ void draw(){
   background(0);
   rect(ballx,bally,20,20);   
   if(keyPressed){
-     keyPressed();
-  }
-}
- 
-public void keyPressed(){
     println("Key code pressed: " + keyCode);
      
     if (key == 'w' || keyCode == UP){
@@ -32,6 +27,11 @@ public void keyPressed(){
     else if (key == 'd' || keyCode == RIGHT){
         ballRight();
     }
+  }
+}
+ 
+public void keyPressed(){
+
          
 }
 public void keyReleased(){
