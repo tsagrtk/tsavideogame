@@ -20,16 +20,16 @@ void draw(){
 public void keyPressed(){
     println("Key code pressed: " + keyCode);
      
-    if (key == 'w'){
+    if (key == 'w' || keyCode == UP){
       ballUp();
     }
-    else if (key == 's'){
+    else if (key == 's' || keyCode == DOWN){
         ballDown();
     }
-    else if (key == 'a'){
+    else if (key == 'a' || keyCode == LEFT){
         ballLeft();
     }
-    else if (key == 'd'){
+    else if (key == 'd' || keyCode == RIGHT){
         ballRight();
     }
          
