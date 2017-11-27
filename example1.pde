@@ -2,7 +2,7 @@
 int ballx=window.innerWidth/2;
 int bally=window.innerHeight/2;
 int speed=10;
-boolean [] keys;
+boolean [] keys = {false,false,false,false};
 
 public void setup(){
     size(window.innerWidth, window.innerHeight);
