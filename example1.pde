@@ -7,7 +7,7 @@ boolean [] keys = {false,false,false,false};
 public void setup(){
     size(window.innerWidth, window.innerHeight);
     background(0);
-    frameRate(7);
+    frameRate(100);
 }
  
 public void draw(){
