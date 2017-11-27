@@ -7,9 +7,10 @@ boolean [] keys = {false,false,false,false};
 public void setup(){
     size(window.innerWidth, window.innerHeight);
     background(0);
+    frameRate(7);
 }
  
-void draw(){
+public void draw(){
   smooth(); 
   background(0);
   rect(playerx,playery,20,20);   
@@ -72,4 +73,8 @@ public void playerLeft(){
 }
 public void playerDown(){  
     playery += playerspeed;   
+}
+
+public class player{
+
 }
