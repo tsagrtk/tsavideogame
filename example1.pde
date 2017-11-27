@@ -1,7 +1,7 @@
 
 int playerx = window.innerWidth/2;
 int playery = window.innerHeight/2;
-int playerspeed = 10;
+int playerspeed = 5;
 boolean [] keys = {false,false,false,false};
 
 public void setup(){
