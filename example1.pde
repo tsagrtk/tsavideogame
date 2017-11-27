@@ -1,7 +1,7 @@
 
 int playerx = window.innerWidth/2;
 int playery = window.innerHeight/2;
-int speed = 10;
+int playerspeed = 10;
 boolean [] keys = {false,false,false,false};
 
 public void setup(){
@@ -60,16 +60,16 @@ public void keyReleased(){
 }
  
 public void playerUp(){
-    playery = playery - speed;
+    playery -= playerspeed;
 }
  
 public void playerRight(){
-    playerx = playerx + speed;    
+    playerx += playerspeed;    
 }
  
 public void playerLeft(){
-    playerx = playerx - speed;   
+    playerx -= playerspeed;   
 }
 public void playerDown(){  
-    playery = playery + speed;   
+    playery += playerspeed;   
 }
