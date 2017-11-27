@@ -4,32 +4,24 @@ int playery = window.innerHeight/2;
 int playerspeed = 5;
 boolean [] keys = {false,false,false,false};
 
-public void setup(){
+Player p1;
+
+void setup(){
     size(window.innerWidth, window.innerHeight);
     background(0);
     frameRate(100);
 }
  
-public void draw(){
+void draw(){
   smooth(); 
   background(0);
-  rect(playerx,playery,20,20);   
   
-  if(keys[0]){
-   playerUp();
-  }
-  if(keys[1]){
-   playerLeft();
-  }
-  if(keys[2]){
-   playerDown();
-  }
-  if(keys[3]){
-   playerRight();
-  }
+  p1 = new player();
+  p1.update();
+  
 }
  
-public void keyPressed(){
+void keyPressed(){
   println("Key code pressed: " + keyCode);
   if (key == 'w' || keyCode == UP){
     keys[0] = true;     
@@ -44,7 +36,8 @@ public void keyPressed(){
     keys[3] = true;
   }    
 }
-public void keyReleased(){
+
+void keyReleased(){
   if (key == 'w' || keyCode == UP){
     keys[0] = false;
   }
@@ -59,22 +52,44 @@ public void keyReleased(){
   }    
 
 }
- 
-public void playerUp(){
-    playery -= playerspeed;
-}
- 
-public void playerRight(){
-    playerx += playerspeed;    
-}
- 
-public void playerLeft(){
-    playerx -= playerspeed;   
-}
-public void playerDown(){  
-    playery += playerspeed;   
-}
 
 public class player{
+    player(int playerx, int playery, int playerspeed){
+        this.playerx=playerx;
+        this.playery=playery;
+        this.playerspeed=playerspeed;       
+    }
+    
+    void update(){
+        rect(playerx,playery,20,20);
+        if(keys[0]){
+            playerUp();
+        }
+        if(keys[1]){
+            playerLeft();
+        }
+        if(keys[2]){
+            playerDown();
+        }
+        if(keys[3]){
+            playerRight();
+        }
+    }
+    
+    void playerUp(){
+        playery -= playerspeed;
+    }
 
+    void playerRight(){
+        playerx += playerspeed;    
+    }
+
+    void playerLeft(){
+        playerx -= playerspeed;   
+    }
+    
+    void playerDown(){  
+        playery += playerspeed;   
+    }
+    
 }
