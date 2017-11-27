@@ -31,20 +31,16 @@ void draw(){
 public void keyPressed(){
   println("Key code pressed: " + keyCode);
   if (key == 'w' || keyCode == UP){
-    keys[0]=true;
-     
+    keys[0]=true;     
   }
   else if (key == 'a' || keyCode == LEFT){
     keys[1]=true;
-    ballLeft();
   }
   else if (key == 's' || keyCode == DOWN){
-      keys[2]=true;
-      ballDown();
+    keys[2]=true;
   }
   else if (key == 'd' || keyCode == RIGHT){
-      keys[3]=true;
-      ballRight();
+    keys[3]=true;
   }    
 }
 public void keyReleased(){
