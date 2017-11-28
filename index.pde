@@ -22,7 +22,6 @@ void draw(){
 }
  
 void keyPressed(){
-  println("Key code pressed: " + keyCode);
   if (key == 'w' || keyCode == UP){
     keys[0] = true;     
   }
