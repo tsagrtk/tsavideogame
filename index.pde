@@ -1,8 +1,8 @@
-
 int playerx = window.innerWidth/2;
 int playery = window.innerHeight/2;
 int playerspeed = 5;
-boolean [] keys = {false,false,false,false};
+
+boolean [] keys = {false,false,false,false,false};
 
 Player p1;
 
@@ -48,11 +48,14 @@ void keyReleased(){
   }
   else if (key == 'd' || keyCode == RIGHT){
     keys[3] = false;
-  }    
+  }   
+  else if (keyCode == SPACE){
+    keys[4] = false;
+  }
 
 }
 
-public class player{
+class player{
     player(int playerx, int playery, int playerspeed){
         this.playerx=playerx;
         this.playery=playery;
@@ -91,4 +94,9 @@ public class player{
         playery += playerspeed;   
     }
     
+}
+class playerbullet{
+    playerbullet(){
+    
+    }
 }
