@@ -1,6 +1,6 @@
 int playerx = window.innerWidth/2;
 int playery = window.innerHeight/2;
-int playerspeed = 5;
+float playerspeed = 2;
 
 boolean [] keys = {false,false,false,false,false};
 
