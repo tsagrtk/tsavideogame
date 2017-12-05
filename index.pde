@@ -2,7 +2,6 @@ int playerx = window.innerWidth/2;
 int playery = window.innerHeight/2;
 float playerspeed = 3;
 char keylastpressed = '';
-2q1
 boolean [] keys = {false,false,false,false,false};
 
 Player p1;
