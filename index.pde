@@ -1,6 +1,7 @@
 int playerx = window.innerWidth/2;
 int playery = window.innerHeight/2;
-float playerspeed = 3;
+float playerspeed = 3.5;
+float bulletspeed = 5;
 char keylastpressed = '';
 boolean [] keys = {false,false,false,false,false};
 
@@ -22,7 +23,6 @@ void draw(){
 }
  
 void keyPressed(){
-  keylastpressed = key;
   if (key == 'w' || keyCode == UP){
     keys[0] = true;     
   }
@@ -67,15 +67,25 @@ class player{
         rect(playerx,playery,20,20);
         if(keys[0]){
             playerUp();
+            if(keys[4]){
+                
+            }
         }
         if(keys[1]){
             playerLeft();
+            if(keys[4]){
+            
+            }
         }
         if(keys[2]){
             playerDown();
+            if(keys[4]){
+            }
         }
         if(keys[3]){
             playerRight();
+            if(keys[4]){
+            }
         }
     }
     
@@ -97,7 +107,26 @@ class player{
     
 }
 class playerbullet{
-    playerbullet(){
-    
+    playerbullet(int x, int y, String direction, float bulletspeed){
+        this.bulletspeed = bulletspeed;
+    }
+    void shoot(){
+        switch (direction){
+            case "UP":
+            y -= bulletspeed;
+            break;
+            case "DOWN":
+            y += bulletspeed;
+            break;
+            case "LEFT":
+            x -= bulletspeed;
+            break;
+            case "RIGHT":
+            x += bulletspeed;
+            break;
+        }
+    }
+    void update(){
+        rect(x,y,50,10);
     }
 }
