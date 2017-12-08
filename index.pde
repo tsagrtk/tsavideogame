@@ -109,7 +109,9 @@ class player{
     
 }
 class playerbullet{
-    playerbullet(int x, int y, String direction, float bulletspeed){
+    playerbullet(String direction, int x, int y, float bulletspeed){
+        this.x = playerx;
+        this.y = playery;
         this.bulletspeed = bulletspeed;
     }
     void shoot(){
