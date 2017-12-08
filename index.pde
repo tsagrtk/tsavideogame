@@ -113,6 +113,7 @@ class playerbullet{
         this.x = playerx;
         this.y = playery;
         this.bulletspeed = bulletspeed;
+        update();
     }
     void shoot(){
         switch (direction){
@@ -129,8 +130,10 @@ class playerbullet{
             x += bulletspeed;
             break;
         }
+        update();
     }
     void update(){
         rect(x,y,50,10);
+        shoot();
     }
 }
