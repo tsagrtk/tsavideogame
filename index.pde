@@ -74,19 +74,19 @@ class player{
         if(keys[1]){
             playerLeft();
             if(keys[4]){
-                new playerbullet("UP");
+                new playerbullet("LEFT");
             }
         }
         if(keys[2]){
             playerDown();
             if(keys[4]){
-                new playerbullet("UP");
+                new playerbullet("DOWN");
             }
         }
         if(keys[3]){
             playerRight();
             if(keys[4]){
-                new playerbullet("UP");
+                new playerbullet("RIGHT");
             }
         }
     }
