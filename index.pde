@@ -68,25 +68,25 @@ class player{
         if(keys[0]){
             playerUp();
             if(keys[4]){
-                new bullet("UP");
+                new playerbullet("UP");
             }
         }
         if(keys[1]){
             playerLeft();
             if(keys[4]){
-                new bullet("UP");
+                new playerbullet("UP");
             }
         }
         if(keys[2]){
             playerDown();
             if(keys[4]){
-                new bullet("UP");
+                new playerbullet("UP");
             }
         }
         if(keys[3]){
             playerRight();
             if(keys[4]){
-                new bullet("UP");
+                new playerbullet("UP");
             }
         }
     }
